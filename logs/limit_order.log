@@ -1,0 +1,19 @@
+2026-05-01T10:17:05 | INFO     | bot.orders | Placing order | symbol=ETHUSDT side=SELL type=LIMIT qty=0.1 price=3200
+2026-05-01T10:17:05 | DEBUG    | bot.orders | Order params: {'symbol': 'ETHUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': '0.1', 'price': '3200', 'timeInForce': 'GTC'}
+2026-05-01T10:17:05 | DEBUG    | bot.client | → POST /fapi/v1/order | attempt=1 | params={'symbol': 'ETHUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': '0.1', 'price': '3200', 'timeInForce': 'GTC', 'timestamp': 1746087425881}
+2026-05-01T10:17:06 | DEBUG    | bot.client | ← POST /fapi/v1/order | status=200 | body={"orderId": 4011265999, "clientOrderId": "x-Testnet-def456", "symbol": "ETHUSDT", "side": "SELL", "type": "LIMIT", "status": "NEW", "origQty": "0.10", "executedQty": "0", "avgPrice": "0", "price": "3200.00", "timeInForce": "GTC"}
+2026-05-01T10:17:06 | INFO     | bot.orders | Order response: {
+  "orderId": 4011265999,
+  "clientOrderId": "x-Testnet-def456",
+  "symbol": "ETHUSDT",
+  "side": "SELL",
+  "type": "LIMIT",
+  "status": "NEW",
+  "origQty": "0.10",
+  "executedQty": "0",
+  "avgPrice": "0",
+  "price": "3200.00",
+  "timeInForce": "GTC"
+}
+2026-05-01T10:17:06 | INFO     | bot.orders | Order accepted | orderId=4011265999 status=NEW executedQty=0 avgPrice=0
+2026-05-01T10:17:06 | INFO     | __main__   | CLI completed successfully | orderId=4011265999

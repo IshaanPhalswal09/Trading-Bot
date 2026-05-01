@@ -1,0 +1,49 @@
+2026-05-01T09:13:40 | INFO     | bot.orders | Placing order | symbol=BTCUSDT side=SELL type=LIMIT qty=0.001 price=65000
+2026-05-01T09:13:40 | DEBUG    | bot.orders | Order params: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': '0.001', 'price': '65000', 'timeInForce': 'GTC'}
+2026-05-01T09:13:40 | INFO     | bot.orders | Order response: {
+  "orderId": 123456,
+  "clientOrderId": "testABC",
+  "symbol": "BTCUSDT",
+  "side": "SELL",
+  "type": "LIMIT",
+  "status": "NEW",
+  "origQty": "0.001",
+  "executedQty": "0",
+  "avgPrice": "0",
+  "price": "65000",
+  "timeInForce": "GTC"
+}
+2026-05-01T09:13:40 | INFO     | bot.orders | Order accepted | orderId=123456 status=NEW executedQty=0 avgPrice=0
+2026-05-01T09:13:40 | INFO     | bot.orders | Placing order | symbol=BTCUSDT side=BUY type=MARKET qty=0.001 price=None
+2026-05-01T09:13:40 | DEBUG    | bot.orders | Order params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.001'}
+2026-05-01T09:13:40 | INFO     | bot.orders | Order response: {
+  "orderId": 123456,
+  "clientOrderId": "testABC",
+  "symbol": "BTCUSDT",
+  "side": "BUY",
+  "type": "MARKET",
+  "status": "NEW",
+  "origQty": "0.001",
+  "executedQty": "0.001",
+  "avgPrice": "65000.00",
+  "price": "0",
+  "timeInForce": ""
+}
+2026-05-01T09:13:40 | INFO     | bot.orders | Order accepted | orderId=123456 status=NEW executedQty=0.001 avgPrice=65000.00
+2026-05-01T09:13:40 | INFO     | bot.orders | Placing order | symbol=BTCUSDT side=BUY type=MARKET qty=0.001 price=None
+2026-05-01T09:13:40 | DEBUG    | bot.orders | Order params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.001'}
+2026-05-01T21:01:08 | INFO     | bot.orders | Placing order | symbol=BTCUSDT side=BUY type=LIMIT qty=0.001 price=80000
+2026-05-01T21:01:08 | DEBUG    | bot.orders | Order params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': '0.001', 'price': '80000', 'timeInForce': 'GTC'}
+2026-05-01T21:01:08 | DEBUG    | bot.client | → POST /fapi/v1/order | attempt=1 | params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': '0.001', 'price': '80000', 'timeInForce': 'GTC', 'timestamp': 1777649468842}
+2026-05-01T21:01:09 | DEBUG    | bot.client | ← POST /fapi/v1/order | status=401 | body={"code":-2015,"msg":"Invalid API-key, IP, or permissions for action"}
+2026-05-01T21:01:09 | ERROR    | __main__ | BinanceAPIError: code=-2015 msg=Invalid API-key, IP, or permissions for action
+2026-05-01T21:11:30 | INFO     | bot.orders | Placing order | symbol=BTCUSDT side=BUY type=LIMIT qty=0.001 price=80000
+2026-05-01T21:11:30 | DEBUG    | bot.orders | Order params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': '0.001', 'price': '80000', 'timeInForce': 'GTC'}
+2026-05-01T21:11:30 | DEBUG    | bot.client | → POST /fapi/v1/order | attempt=1 | params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': '0.001', 'price': '80000', 'timeInForce': 'GTC', 'timestamp': 1777650090620}
+2026-05-01T21:11:31 | DEBUG    | bot.client | ← POST /fapi/v1/order | status=401 | body={"code":-2015,"msg":"Invalid API-key, IP, or permissions for action"}
+2026-05-01T21:11:31 | ERROR    | __main__ | BinanceAPIError: code=-2015 msg=Invalid API-key, IP, or permissions for action
+2026-05-01T21:16:51 | INFO     | bot.orders | Placing order | symbol=BTCUSDT side=BUY type=LIMIT qty=0.001 price=80000
+2026-05-01T21:16:51 | DEBUG    | bot.orders | Order params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': '0.001', 'price': '80000', 'timeInForce': 'GTC'}
+2026-05-01T21:16:51 | DEBUG    | bot.client | → POST /fapi/v1/order | attempt=1 | params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': '0.001', 'price': '80000', 'timeInForce': 'GTC', 'timestamp': 1777650411300}
+2026-05-01T21:16:51 | DEBUG    | bot.client | ← POST /fapi/v1/order | status=401 | body={"code":-2015,"msg":"Invalid API-key, IP, or permissions for action"}
+2026-05-01T21:16:51 | ERROR    | __main__ | BinanceAPIError: code=-2015 msg=Invalid API-key, IP, or permissions for action

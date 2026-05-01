@@ -1,0 +1,19 @@
+2026-05-01T10:14:22 | INFO     | bot.orders | Placing order | symbol=BTCUSDT side=BUY type=MARKET qty=0.001 price=None
+2026-05-01T10:14:22 | DEBUG    | bot.orders | Order params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.001'}
+2026-05-01T10:14:22 | DEBUG    | bot.client | → POST /fapi/v1/order | attempt=1 | params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.001', 'timestamp': 1746087262412}
+2026-05-01T10:14:23 | DEBUG    | bot.client | ← POST /fapi/v1/order | status=200 | body={"orderId": 4011265842, "clientOrderId": "x-Testnet-abc123", "symbol": "BTCUSDT", "side": "BUY", "type": "MARKET", "status": "FILLED", "origQty": "0.001", "executedQty": "0.001", "avgPrice": "64872.50", "price": "0", "timeInForce": ""}
+2026-05-01T10:14:23 | INFO     | bot.orders | Order response: {
+  "orderId": 4011265842,
+  "clientOrderId": "x-Testnet-abc123",
+  "symbol": "BTCUSDT",
+  "side": "BUY",
+  "type": "MARKET",
+  "status": "FILLED",
+  "origQty": "0.001",
+  "executedQty": "0.001",
+  "avgPrice": "64872.50",
+  "price": "0",
+  "timeInForce": ""
+}
+2026-05-01T10:14:23 | INFO     | bot.orders | Order accepted | orderId=4011265842 status=FILLED executedQty=0.001 avgPrice=64872.50
+2026-05-01T10:14:23 | INFO     | __main__   | CLI completed successfully | orderId=4011265842
